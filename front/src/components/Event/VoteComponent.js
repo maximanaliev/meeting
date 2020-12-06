@@ -83,7 +83,9 @@ const VoteComponent = props => {
 
         let voters = [];
         for (let i in votedUsers) {
-            if (`${votedUsers[i].eventName}${votedUsers[i].datetime}` === `${winner.event.eventName}${winner.event.time}`) {
+            if (`${votedUsers[i].eventName}${votedUsers[i].datetime}`
+                ===
+                `${winner.event.eventName}${winner.event.time}`) {
                 voters.push(votedUsers[i].user);
             }
             setWinner(winner.event.eventName);
