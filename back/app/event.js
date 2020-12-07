@@ -122,7 +122,7 @@ const timerStart = async (type, time, ws, user) => {
                 seconds: seconds.toString().length === 1 ? `0${seconds}` : `${seconds}`,
             }))
         });
-    }, 100);
+    }, 1000);
 };
 
 const voted = async (ws, user) => {
